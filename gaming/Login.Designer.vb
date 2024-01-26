@@ -55,7 +55,7 @@ Partial Class Login
         loginButton.BackgroundImage = CType(resources.GetObject("loginButton.BackgroundImage"), Image)
         loginButton.BackgroundImageLayout = ImageLayout.Stretch
         loginButton.FlatStyle = FlatStyle.Popup
-        loginButton.ForeColor = Color.Black
+        loginButton.ForeColor = SystemColors.ButtonFace
         loginButton.Location = New Point(240, 208)
         loginButton.Name = "loginButton"
         loginButton.Size = New Size(126, 23)
@@ -80,7 +80,7 @@ Partial Class Login
         closeButton.BackgroundImage = CType(resources.GetObject("closeButton.BackgroundImage"), Image)
         closeButton.BackgroundImageLayout = ImageLayout.Stretch
         closeButton.FlatStyle = FlatStyle.Popup
-        closeButton.ForeColor = Color.Black
+        closeButton.ForeColor = SystemColors.ButtonFace
         closeButton.Location = New Point(12, 12)
         closeButton.Name = "closeButton"
         closeButton.Size = New Size(49, 23)

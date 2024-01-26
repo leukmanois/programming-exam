@@ -56,7 +56,11 @@ Partial Class Calculator
         ' 
         ' buttonSeven
         ' 
+        buttonSeven.BackgroundImage = My.Resources.Resources.buttongradient
+        buttonSeven.BackgroundImageLayout = ImageLayout.Stretch
+        buttonSeven.FlatStyle = FlatStyle.Popup
         buttonSeven.Font = New Font("Yu Gothic UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        buttonSeven.ForeColor = SystemColors.ButtonFace
         buttonSeven.Location = New Point(13, 107)
         buttonSeven.Name = "buttonSeven"
         buttonSeven.Size = New Size(85, 85)
@@ -66,7 +70,11 @@ Partial Class Calculator
         ' 
         ' buttonEight
         ' 
+        buttonEight.BackgroundImage = My.Resources.Resources.buttongradient
+        buttonEight.BackgroundImageLayout = ImageLayout.Stretch
+        buttonEight.FlatStyle = FlatStyle.Popup
         buttonEight.Font = New Font("Yu Gothic UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        buttonEight.ForeColor = SystemColors.ButtonFace
         buttonEight.Location = New Point(104, 107)
         buttonEight.Name = "buttonEight"
         buttonEight.Size = New Size(85, 85)
@@ -76,7 +84,11 @@ Partial Class Calculator
         ' 
         ' buttonNine
         ' 
+        buttonNine.BackgroundImage = My.Resources.Resources.buttongradient
+        buttonNine.BackgroundImageLayout = ImageLayout.Stretch
+        buttonNine.FlatStyle = FlatStyle.Popup
         buttonNine.Font = New Font("Yu Gothic UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        buttonNine.ForeColor = SystemColors.ButtonFace
         buttonNine.Location = New Point(195, 107)
         buttonNine.Name = "buttonNine"
         buttonNine.Size = New Size(85, 85)
@@ -86,7 +98,11 @@ Partial Class Calculator
         ' 
         ' buttonDivide
         ' 
+        buttonDivide.BackgroundImage = My.Resources.Resources.buttongradient
+        buttonDivide.BackgroundImageLayout = ImageLayout.Stretch
+        buttonDivide.FlatStyle = FlatStyle.Popup
         buttonDivide.Font = New Font("Yu Gothic UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        buttonDivide.ForeColor = SystemColors.ButtonFace
         buttonDivide.Location = New Point(286, 107)
         buttonDivide.Name = "buttonDivide"
         buttonDivide.Size = New Size(85, 85)
@@ -96,7 +112,11 @@ Partial Class Calculator
         ' 
         ' buttonMultiply
         ' 
+        buttonMultiply.BackgroundImage = My.Resources.Resources.buttongradient
+        buttonMultiply.BackgroundImageLayout = ImageLayout.Stretch
+        buttonMultiply.FlatStyle = FlatStyle.Popup
         buttonMultiply.Font = New Font("Yu Gothic UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        buttonMultiply.ForeColor = SystemColors.ButtonFace
         buttonMultiply.Location = New Point(286, 198)
         buttonMultiply.Name = "buttonMultiply"
         buttonMultiply.Size = New Size(85, 85)
@@ -106,7 +126,11 @@ Partial Class Calculator
         ' 
         ' buttonMinus
         ' 
+        buttonMinus.BackgroundImage = My.Resources.Resources.buttongradient
+        buttonMinus.BackgroundImageLayout = ImageLayout.Stretch
+        buttonMinus.FlatStyle = FlatStyle.Popup
         buttonMinus.Font = New Font("Yu Gothic UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        buttonMinus.ForeColor = SystemColors.ButtonFace
         buttonMinus.Location = New Point(286, 289)
         buttonMinus.Name = "buttonMinus"
         buttonMinus.Size = New Size(85, 85)
@@ -116,7 +140,11 @@ Partial Class Calculator
         ' 
         ' buttonPlus
         ' 
+        buttonPlus.BackgroundImage = My.Resources.Resources.buttongradient
+        buttonPlus.BackgroundImageLayout = ImageLayout.Stretch
+        buttonPlus.FlatStyle = FlatStyle.Popup
         buttonPlus.Font = New Font("Yu Gothic UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        buttonPlus.ForeColor = SystemColors.ButtonFace
         buttonPlus.Location = New Point(286, 380)
         buttonPlus.Name = "buttonPlus"
         buttonPlus.Size = New Size(85, 85)
@@ -126,7 +154,11 @@ Partial Class Calculator
         ' 
         ' buttonSix
         ' 
+        buttonSix.BackgroundImage = My.Resources.Resources.buttongradient
+        buttonSix.BackgroundImageLayout = ImageLayout.Stretch
+        buttonSix.FlatStyle = FlatStyle.Popup
         buttonSix.Font = New Font("Yu Gothic UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        buttonSix.ForeColor = SystemColors.ButtonFace
         buttonSix.Location = New Point(195, 198)
         buttonSix.Name = "buttonSix"
         buttonSix.Size = New Size(85, 85)
@@ -136,7 +168,11 @@ Partial Class Calculator
         ' 
         ' buttonFive
         ' 
+        buttonFive.BackgroundImage = My.Resources.Resources.buttongradient
+        buttonFive.BackgroundImageLayout = ImageLayout.Stretch
+        buttonFive.FlatStyle = FlatStyle.Popup
         buttonFive.Font = New Font("Yu Gothic UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        buttonFive.ForeColor = SystemColors.ButtonFace
         buttonFive.Location = New Point(104, 198)
         buttonFive.Name = "buttonFive"
         buttonFive.Size = New Size(85, 85)
@@ -146,7 +182,11 @@ Partial Class Calculator
         ' 
         ' buttonFour
         ' 
+        buttonFour.BackgroundImage = My.Resources.Resources.buttongradient
+        buttonFour.BackgroundImageLayout = ImageLayout.Stretch
+        buttonFour.FlatStyle = FlatStyle.Popup
         buttonFour.Font = New Font("Yu Gothic UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        buttonFour.ForeColor = SystemColors.ButtonFace
         buttonFour.Location = New Point(13, 198)
         buttonFour.Name = "buttonFour"
         buttonFour.Size = New Size(85, 85)
@@ -156,7 +196,11 @@ Partial Class Calculator
         ' 
         ' buttonThree
         ' 
+        buttonThree.BackgroundImage = My.Resources.Resources.buttongradient
+        buttonThree.BackgroundImageLayout = ImageLayout.Stretch
+        buttonThree.FlatStyle = FlatStyle.Popup
         buttonThree.Font = New Font("Yu Gothic UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        buttonThree.ForeColor = SystemColors.ButtonFace
         buttonThree.Location = New Point(195, 289)
         buttonThree.Name = "buttonThree"
         buttonThree.Size = New Size(85, 85)
@@ -166,7 +210,11 @@ Partial Class Calculator
         ' 
         ' buttonZero
         ' 
+        buttonZero.BackgroundImage = My.Resources.Resources.buttongradient
+        buttonZero.BackgroundImageLayout = ImageLayout.Stretch
+        buttonZero.FlatStyle = FlatStyle.Popup
         buttonZero.Font = New Font("Yu Gothic UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        buttonZero.ForeColor = SystemColors.ButtonFace
         buttonZero.Location = New Point(195, 380)
         buttonZero.Name = "buttonZero"
         buttonZero.Size = New Size(85, 85)
@@ -176,7 +224,11 @@ Partial Class Calculator
         ' 
         ' buttonTwo
         ' 
+        buttonTwo.BackgroundImage = My.Resources.Resources.buttongradient
+        buttonTwo.BackgroundImageLayout = ImageLayout.Stretch
+        buttonTwo.FlatStyle = FlatStyle.Popup
         buttonTwo.Font = New Font("Yu Gothic UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        buttonTwo.ForeColor = SystemColors.ButtonFace
         buttonTwo.Location = New Point(104, 289)
         buttonTwo.Name = "buttonTwo"
         buttonTwo.Size = New Size(85, 85)
@@ -186,7 +238,11 @@ Partial Class Calculator
         ' 
         ' buttonOne
         ' 
+        buttonOne.BackgroundImage = My.Resources.Resources.buttongradient
+        buttonOne.BackgroundImageLayout = ImageLayout.Stretch
+        buttonOne.FlatStyle = FlatStyle.Popup
         buttonOne.Font = New Font("Yu Gothic UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        buttonOne.ForeColor = SystemColors.ButtonFace
         buttonOne.Location = New Point(13, 289)
         buttonOne.Name = "buttonOne"
         buttonOne.Size = New Size(85, 85)
@@ -196,7 +252,11 @@ Partial Class Calculator
         ' 
         ' buttonEquals
         ' 
+        buttonEquals.BackgroundImage = My.Resources.Resources.buttongradient
+        buttonEquals.BackgroundImageLayout = ImageLayout.Stretch
+        buttonEquals.FlatStyle = FlatStyle.Popup
         buttonEquals.Font = New Font("Yu Gothic UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        buttonEquals.ForeColor = SystemColors.ButtonFace
         buttonEquals.Location = New Point(13, 380)
         buttonEquals.Name = "buttonEquals"
         buttonEquals.Size = New Size(176, 85)
@@ -206,6 +266,10 @@ Partial Class Calculator
         ' 
         ' resetButton
         ' 
+        resetButton.BackgroundImage = My.Resources.Resources.buttongradient
+        resetButton.BackgroundImageLayout = ImageLayout.Stretch
+        resetButton.FlatStyle = FlatStyle.Popup
+        resetButton.ForeColor = SystemColors.ButtonFace
         resetButton.Location = New Point(286, 12)
         resetButton.Name = "resetButton"
         resetButton.Size = New Size(85, 23)
@@ -215,6 +279,10 @@ Partial Class Calculator
         ' 
         ' backToLogin
         ' 
+        backToLogin.BackgroundImage = My.Resources.Resources.buttongradient
+        backToLogin.BackgroundImageLayout = ImageLayout.Stretch
+        backToLogin.FlatStyle = FlatStyle.Popup
+        backToLogin.ForeColor = SystemColors.ButtonFace
         backToLogin.Location = New Point(12, 12)
         backToLogin.Name = "backToLogin"
         backToLogin.Size = New Size(110, 23)
@@ -226,6 +294,8 @@ Partial Class Calculator
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
+        BackgroundImage = My.Resources.Resources.logingradient
+        BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(383, 476)
         Controls.Add(backToLogin)
         Controls.Add(resetButton)
@@ -245,6 +315,7 @@ Partial Class Calculator
         Controls.Add(buttonEight)
         Controls.Add(buttonSeven)
         Controls.Add(calcBox)
+        DoubleBuffered = True
         Name = "Calculator"
         Text = "Calculator"
         ResumeLayout(False)

@@ -22,70 +22,87 @@ Partial Class RPS
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Button1 = New Button()
-        Button2 = New Button()
-        Button3 = New Button()
-        Button4 = New Button()
-        Button5 = New Button()
+        buttonRock = New Button()
+        buttonPaper = New Button()
+        buttonScissors = New Button()
+        playerDisplay = New Button()
+        computerDisplay = New Button()
         Label1 = New Label()
         Label2 = New Label()
-        Label3 = New Label()
-        Label4 = New Label()
+        playerScore = New Label()
+        computerScore = New Label()
         Label5 = New Label()
         backToLogin = New Button()
         SuspendLayout()
         ' 
-        ' Button1
+        ' buttonRock
         ' 
-        Button1.Font = New Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Button1.Location = New Point(243, 286)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(100, 55)
-        Button1.TabIndex = 0
-        Button1.Text = "🗿"
-        Button1.UseVisualStyleBackColor = True
+        buttonRock.BackgroundImage = My.Resources.Resources.buttongradient
+        buttonRock.BackgroundImageLayout = ImageLayout.Stretch
+        buttonRock.FlatStyle = FlatStyle.Popup
+        buttonRock.Font = New Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        buttonRock.ForeColor = SystemColors.ButtonFace
+        buttonRock.Location = New Point(243, 286)
+        buttonRock.Name = "buttonRock"
+        buttonRock.Size = New Size(100, 55)
+        buttonRock.TabIndex = 0
+        buttonRock.Text = "🗿"
+        buttonRock.UseVisualStyleBackColor = True
         ' 
-        ' Button2
+        ' buttonPaper
         ' 
-        Button2.Font = New Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Button2.Location = New Point(349, 286)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(100, 55)
-        Button2.TabIndex = 1
-        Button2.Text = ChrW(55358) & ChrW(56827)
-        Button2.UseVisualStyleBackColor = True
+        buttonPaper.BackgroundImage = My.Resources.Resources.buttongradient
+        buttonPaper.BackgroundImageLayout = ImageLayout.Stretch
+        buttonPaper.FlatStyle = FlatStyle.Popup
+        buttonPaper.Font = New Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        buttonPaper.ForeColor = SystemColors.ButtonFace
+        buttonPaper.Location = New Point(349, 286)
+        buttonPaper.Name = "buttonPaper"
+        buttonPaper.Size = New Size(100, 55)
+        buttonPaper.TabIndex = 1
+        buttonPaper.Text = ChrW(55358) & ChrW(56827)
+        buttonPaper.UseVisualStyleBackColor = True
         ' 
-        ' Button3
+        ' buttonScissors
         ' 
-        Button3.Font = New Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Button3.Location = New Point(455, 286)
-        Button3.Name = "Button3"
-        Button3.Size = New Size(100, 55)
-        Button3.TabIndex = 2
-        Button3.Text = "⚔️"
-        Button3.UseVisualStyleBackColor = True
+        buttonScissors.BackgroundImage = My.Resources.Resources.buttongradient
+        buttonScissors.BackgroundImageLayout = ImageLayout.Stretch
+        buttonScissors.FlatStyle = FlatStyle.Popup
+        buttonScissors.Font = New Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        buttonScissors.ForeColor = SystemColors.ButtonFace
+        buttonScissors.Location = New Point(455, 286)
+        buttonScissors.Name = "buttonScissors"
+        buttonScissors.Size = New Size(100, 55)
+        buttonScissors.TabIndex = 2
+        buttonScissors.Text = "⚔️"
+        buttonScissors.UseVisualStyleBackColor = True
         ' 
-        ' Button4
+        ' playerDisplay
         ' 
-        Button4.Font = New Font("Segoe UI", 26.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Button4.Location = New Point(243, 117)
-        Button4.Name = "Button4"
-        Button4.Size = New Size(100, 100)
-        Button4.TabIndex = 3
-        Button4.UseVisualStyleBackColor = True
+        playerDisplay.Enabled = False
+        playerDisplay.Font = New Font("Segoe UI", 26.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        playerDisplay.ForeColor = SystemColors.ControlText
+        playerDisplay.Location = New Point(243, 117)
+        playerDisplay.Name = "playerDisplay"
+        playerDisplay.Size = New Size(100, 100)
+        playerDisplay.TabIndex = 3
+        playerDisplay.UseVisualStyleBackColor = True
         ' 
-        ' Button5
+        ' computerDisplay
         ' 
-        Button5.Font = New Font("Segoe UI", 26.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Button5.Location = New Point(455, 117)
-        Button5.Name = "Button5"
-        Button5.Size = New Size(100, 100)
-        Button5.TabIndex = 4
-        Button5.UseVisualStyleBackColor = True
+        computerDisplay.Enabled = False
+        computerDisplay.Font = New Font("Segoe UI", 26.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        computerDisplay.Location = New Point(455, 117)
+        computerDisplay.Name = "computerDisplay"
+        computerDisplay.Size = New Size(100, 100)
+        computerDisplay.TabIndex = 4
+        computerDisplay.UseVisualStyleBackColor = True
         ' 
         ' Label1
         ' 
+        Label1.BackColor = Color.Transparent
         Label1.Font = New Font("Yu Gothic UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label1.ForeColor = SystemColors.ButtonFace
         Label1.Location = New Point(243, 89)
         Label1.Name = "Label1"
         Label1.Size = New Size(100, 23)
@@ -95,7 +112,9 @@ Partial Class RPS
         ' 
         ' Label2
         ' 
+        Label2.BackColor = Color.Transparent
         Label2.Font = New Font("Yu Gothic UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label2.ForeColor = SystemColors.ButtonFace
         Label2.Location = New Point(455, 89)
         Label2.Name = "Label2"
         Label2.Size = New Size(100, 23)
@@ -103,30 +122,35 @@ Partial Class RPS
         Label2.Text = "COMPUTER"
         Label2.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Label3
+        ' playerScore
         ' 
-        Label3.Font = New Font("Yu Gothic UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label3.Location = New Point(349, 117)
-        Label3.Name = "Label3"
-        Label3.Size = New Size(37, 100)
-        Label3.TabIndex = 7
-        Label3.Text = "0"
-        Label3.TextAlign = ContentAlignment.MiddleCenter
+        playerScore.BackColor = Color.Transparent
+        playerScore.Font = New Font("Yu Gothic UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        playerScore.ForeColor = SystemColors.ButtonFace
+        playerScore.Location = New Point(349, 117)
+        playerScore.Name = "playerScore"
+        playerScore.Size = New Size(37, 100)
+        playerScore.TabIndex = 7
+        playerScore.Text = "0"
+        playerScore.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Label4
+        ' computerScore
         ' 
-        Label4.Font = New Font("Yu Gothic UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label4.Location = New Point(412, 117)
-        Label4.Name = "Label4"
-        Label4.Size = New Size(37, 100)
-        Label4.TabIndex = 8
-        Label4.Text = "0"
-        Label4.TextAlign = ContentAlignment.MiddleCenter
+        computerScore.BackColor = Color.Transparent
+        computerScore.Font = New Font("Yu Gothic UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        computerScore.ForeColor = SystemColors.ButtonFace
+        computerScore.Location = New Point(412, 117)
+        computerScore.Name = "computerScore"
+        computerScore.Size = New Size(37, 100)
+        computerScore.TabIndex = 8
+        computerScore.Text = "0"
+        computerScore.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' Label5
         ' 
         Label5.BackColor = Color.Transparent
         Label5.Font = New Font("Yu Gothic UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label5.ForeColor = SystemColors.ButtonFace
         Label5.Location = New Point(385, 117)
         Label5.Name = "Label5"
         Label5.Size = New Size(28, 100)
@@ -136,6 +160,10 @@ Partial Class RPS
         ' 
         ' backToLogin
         ' 
+        backToLogin.BackgroundImage = My.Resources.Resources.buttongradient
+        backToLogin.BackgroundImageLayout = ImageLayout.Stretch
+        backToLogin.FlatStyle = FlatStyle.Popup
+        backToLogin.ForeColor = SystemColors.ButtonFace
         backToLogin.Location = New Point(12, 12)
         backToLogin.Name = "backToLogin"
         backToLogin.Size = New Size(110, 24)
@@ -147,32 +175,35 @@ Partial Class RPS
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
+        BackgroundImage = My.Resources.Resources.logingradient
+        BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(800, 450)
         Controls.Add(backToLogin)
         Controls.Add(Label5)
-        Controls.Add(Label4)
-        Controls.Add(Label3)
+        Controls.Add(computerScore)
+        Controls.Add(playerScore)
         Controls.Add(Label2)
         Controls.Add(Label1)
-        Controls.Add(Button5)
-        Controls.Add(Button4)
-        Controls.Add(Button3)
-        Controls.Add(Button2)
-        Controls.Add(Button1)
+        Controls.Add(computerDisplay)
+        Controls.Add(playerDisplay)
+        Controls.Add(buttonScissors)
+        Controls.Add(buttonPaper)
+        Controls.Add(buttonRock)
+        DoubleBuffered = True
         Name = "RPS"
         Text = "Rock-Paper-Scissors"
         ResumeLayout(False)
     End Sub
 
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button5 As Button
+    Friend WithEvents buttonRock As Button
+    Friend WithEvents buttonPaper As Button
+    Friend WithEvents buttonScissors As Button
+    Friend WithEvents playerDisplay As Button
+    Friend WithEvents computerDisplay As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label4 As Label
+    Friend WithEvents playerScore As Label
+    Friend WithEvents computerScore As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents backToLogin As Button
 End Class

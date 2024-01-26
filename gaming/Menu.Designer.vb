@@ -31,6 +31,10 @@ Partial Class Menu
         ' Calcu
         ' 
         Calcu.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
+        Calcu.BackgroundImage = My.Resources.Resources.buttongradient
+        Calcu.BackgroundImageLayout = ImageLayout.Stretch
+        Calcu.FlatStyle = FlatStyle.Popup
+        Calcu.ForeColor = SystemColors.ButtonFace
         Calcu.Location = New Point(300, 115)
         Calcu.Name = "Calcu"
         Calcu.Size = New Size(188, 38)
@@ -41,6 +45,10 @@ Partial Class Menu
         ' RockPaper
         ' 
         RockPaper.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
+        RockPaper.BackgroundImage = My.Resources.Resources.buttongradient
+        RockPaper.BackgroundImageLayout = ImageLayout.Stretch
+        RockPaper.FlatStyle = FlatStyle.Popup
+        RockPaper.ForeColor = SystemColors.ButtonFace
         RockPaper.Location = New Point(300, 159)
         RockPaper.Name = "RockPaper"
         RockPaper.Size = New Size(188, 38)
@@ -51,6 +59,10 @@ Partial Class Menu
         ' GlassGe
         ' 
         GlassGe.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
+        GlassGe.BackgroundImage = My.Resources.Resources.buttongradient
+        GlassGe.BackgroundImageLayout = ImageLayout.Stretch
+        GlassGe.FlatStyle = FlatStyle.Popup
+        GlassGe.ForeColor = SystemColors.ButtonFace
         GlassGe.Location = New Point(300, 203)
         GlassGe.Name = "GlassGe"
         GlassGe.Size = New Size(188, 38)
@@ -60,6 +72,10 @@ Partial Class Menu
         ' 
         ' backToLogin
         ' 
+        backToLogin.BackgroundImage = My.Resources.Resources.buttongradient
+        backToLogin.BackgroundImageLayout = ImageLayout.Stretch
+        backToLogin.FlatStyle = FlatStyle.Popup
+        backToLogin.ForeColor = SystemColors.ButtonFace
         backToLogin.Location = New Point(12, 12)
         backToLogin.Name = "backToLogin"
         backToLogin.Size = New Size(110, 24)
@@ -71,11 +87,14 @@ Partial Class Menu
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
+        BackgroundImage = My.Resources.Resources.logingradient
+        BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(784, 441)
         Controls.Add(backToLogin)
         Controls.Add(GlassGe)
         Controls.Add(RockPaper)
         Controls.Add(Calcu)
+        DoubleBuffered = True
         Name = "Menu"
         Text = "Menu"
         ResumeLayout(False)
