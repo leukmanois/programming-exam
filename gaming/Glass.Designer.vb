@@ -22,103 +22,117 @@ Partial Class Glass
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        tileOne = New Button()
-        tileTwo = New Button()
-        tileThree = New Button()
-        tileFour = New Button()
-        tileFive = New Button()
-        tileSix = New Button()
-        tileSeven = New Button()
-        tileEight = New Button()
+        tile1 = New Button()
+        tile2 = New Button()
+        tile3 = New Button()
+        tile4 = New Button()
+        tile5 = New Button()
+        tile6 = New Button()
+        tile7 = New Button()
+        tile8 = New Button()
+        backToLogin = New Button()
         SuspendLayout()
         ' 
-        ' tileOne
+        ' tile1
         ' 
-        tileOne.BackgroundImage = My.Resources.Resources.buttongradient
-        tileOne.BackgroundImageLayout = ImageLayout.Stretch
-        tileOne.FlatStyle = FlatStyle.Popup
-        tileOne.Location = New Point(158, 195)
-        tileOne.Name = "tileOne"
-        tileOne.Size = New Size(75, 75)
-        tileOne.TabIndex = 0
-        tileOne.UseVisualStyleBackColor = True
+        tile1.BackgroundImage = My.Resources.Resources.buttongradient
+        tile1.BackgroundImageLayout = ImageLayout.Stretch
+        tile1.FlatStyle = FlatStyle.Popup
+        tile1.Location = New Point(158, 195)
+        tile1.Name = "tile1"
+        tile1.Size = New Size(75, 75)
+        tile1.TabIndex = 0
+        tile1.UseVisualStyleBackColor = True
         ' 
-        ' tileTwo
+        ' tile2
         ' 
-        tileTwo.BackgroundImage = My.Resources.Resources.buttongradient
-        tileTwo.BackgroundImageLayout = ImageLayout.Stretch
-        tileTwo.FlatStyle = FlatStyle.Popup
-        tileTwo.Location = New Point(248, 150)
-        tileTwo.Name = "tileTwo"
-        tileTwo.Size = New Size(75, 75)
-        tileTwo.TabIndex = 1
-        tileTwo.UseVisualStyleBackColor = True
+        tile2.BackgroundImage = My.Resources.Resources.buttongradient
+        tile2.BackgroundImageLayout = ImageLayout.Stretch
+        tile2.FlatStyle = FlatStyle.Popup
+        tile2.Location = New Point(248, 150)
+        tile2.Name = "tile2"
+        tile2.Size = New Size(75, 75)
+        tile2.TabIndex = 1
+        tile2.UseVisualStyleBackColor = True
         ' 
-        ' tileThree
+        ' tile3
         ' 
-        tileThree.BackgroundImage = My.Resources.Resources.buttongradient
-        tileThree.BackgroundImageLayout = ImageLayout.Stretch
-        tileThree.FlatStyle = FlatStyle.Popup
-        tileThree.Location = New Point(248, 240)
-        tileThree.Name = "tileThree"
-        tileThree.Size = New Size(75, 75)
-        tileThree.TabIndex = 2
-        tileThree.UseVisualStyleBackColor = True
+        tile3.BackgroundImage = My.Resources.Resources.buttongradient
+        tile3.BackgroundImageLayout = ImageLayout.Stretch
+        tile3.FlatStyle = FlatStyle.Popup
+        tile3.Location = New Point(248, 240)
+        tile3.Name = "tile3"
+        tile3.Size = New Size(75, 75)
+        tile3.TabIndex = 2
+        tile3.UseVisualStyleBackColor = True
         ' 
-        ' tileFour
+        ' tile4
         ' 
-        tileFour.BackgroundImage = My.Resources.Resources.buttongradient
-        tileFour.BackgroundImageLayout = ImageLayout.Stretch
-        tileFour.FlatStyle = FlatStyle.Popup
-        tileFour.Location = New Point(338, 150)
-        tileFour.Name = "tileFour"
-        tileFour.Size = New Size(75, 75)
-        tileFour.TabIndex = 3
-        tileFour.UseVisualStyleBackColor = True
+        tile4.BackgroundImage = My.Resources.Resources.buttongradient
+        tile4.BackgroundImageLayout = ImageLayout.Stretch
+        tile4.FlatStyle = FlatStyle.Popup
+        tile4.Location = New Point(338, 150)
+        tile4.Name = "tile4"
+        tile4.Size = New Size(75, 75)
+        tile4.TabIndex = 3
+        tile4.UseVisualStyleBackColor = True
         ' 
-        ' tileFive
+        ' tile5
         ' 
-        tileFive.BackgroundImage = My.Resources.Resources.buttongradient
-        tileFive.BackgroundImageLayout = ImageLayout.Stretch
-        tileFive.FlatStyle = FlatStyle.Popup
-        tileFive.Location = New Point(338, 240)
-        tileFive.Name = "tileFive"
-        tileFive.Size = New Size(75, 75)
-        tileFive.TabIndex = 4
-        tileFive.UseVisualStyleBackColor = True
+        tile5.BackgroundImage = My.Resources.Resources.buttongradient
+        tile5.BackgroundImageLayout = ImageLayout.Stretch
+        tile5.FlatStyle = FlatStyle.Popup
+        tile5.Location = New Point(338, 240)
+        tile5.Name = "tile5"
+        tile5.Size = New Size(75, 75)
+        tile5.TabIndex = 4
+        tile5.UseVisualStyleBackColor = True
         ' 
-        ' tileSix
+        ' tile6
         ' 
-        tileSix.BackgroundImage = My.Resources.Resources.buttongradient
-        tileSix.BackgroundImageLayout = ImageLayout.Stretch
-        tileSix.FlatStyle = FlatStyle.Popup
-        tileSix.Location = New Point(428, 150)
-        tileSix.Name = "tileSix"
-        tileSix.Size = New Size(75, 75)
-        tileSix.TabIndex = 5
-        tileSix.UseVisualStyleBackColor = True
+        tile6.BackgroundImage = My.Resources.Resources.buttongradient
+        tile6.BackgroundImageLayout = ImageLayout.Stretch
+        tile6.FlatStyle = FlatStyle.Popup
+        tile6.Location = New Point(428, 150)
+        tile6.Name = "tile6"
+        tile6.Size = New Size(75, 75)
+        tile6.TabIndex = 5
+        tile6.UseVisualStyleBackColor = True
         ' 
-        ' tileSeven
+        ' tile7
         ' 
-        tileSeven.BackgroundImage = My.Resources.Resources.buttongradient
-        tileSeven.BackgroundImageLayout = ImageLayout.Stretch
-        tileSeven.FlatStyle = FlatStyle.Popup
-        tileSeven.Location = New Point(428, 240)
-        tileSeven.Name = "tileSeven"
-        tileSeven.Size = New Size(75, 75)
-        tileSeven.TabIndex = 6
-        tileSeven.UseVisualStyleBackColor = True
+        tile7.BackgroundImage = My.Resources.Resources.buttongradient
+        tile7.BackgroundImageLayout = ImageLayout.Stretch
+        tile7.FlatStyle = FlatStyle.Popup
+        tile7.Location = New Point(428, 240)
+        tile7.Name = "tile7"
+        tile7.Size = New Size(75, 75)
+        tile7.TabIndex = 6
+        tile7.UseVisualStyleBackColor = True
         ' 
-        ' tileEight
+        ' tile8
         ' 
-        tileEight.BackgroundImage = My.Resources.Resources.buttongradient
-        tileEight.BackgroundImageLayout = ImageLayout.Stretch
-        tileEight.FlatStyle = FlatStyle.Popup
-        tileEight.Location = New Point(518, 195)
-        tileEight.Name = "tileEight"
-        tileEight.Size = New Size(75, 75)
-        tileEight.TabIndex = 7
-        tileEight.UseVisualStyleBackColor = True
+        tile8.BackgroundImage = My.Resources.Resources.buttongradient
+        tile8.BackgroundImageLayout = ImageLayout.Stretch
+        tile8.FlatStyle = FlatStyle.Popup
+        tile8.Location = New Point(518, 195)
+        tile8.Name = "tile8"
+        tile8.Size = New Size(75, 75)
+        tile8.TabIndex = 7
+        tile8.UseVisualStyleBackColor = True
+        ' 
+        ' backToLogin
+        ' 
+        backToLogin.BackgroundImage = My.Resources.Resources.buttongradient
+        backToLogin.BackgroundImageLayout = ImageLayout.Stretch
+        backToLogin.FlatStyle = FlatStyle.Popup
+        backToLogin.ForeColor = SystemColors.ButtonFace
+        backToLogin.Location = New Point(12, 12)
+        backToLogin.Name = "backToLogin"
+        backToLogin.Size = New Size(110, 24)
+        backToLogin.TabIndex = 11
+        backToLogin.Text = "Back to Menu"
+        backToLogin.UseVisualStyleBackColor = True
         ' 
         ' Glass
         ' 
@@ -126,15 +140,16 @@ Partial Class Glass
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = My.Resources.Resources.logingradient
         BackgroundImageLayout = ImageLayout.Stretch
-        ClientSize = New Size(800, 450)
-        Controls.Add(tileEight)
-        Controls.Add(tileSeven)
-        Controls.Add(tileSix)
-        Controls.Add(tileFive)
-        Controls.Add(tileFour)
-        Controls.Add(tileThree)
-        Controls.Add(tileTwo)
-        Controls.Add(tileOne)
+        ClientSize = New Size(751, 450)
+        Controls.Add(backToLogin)
+        Controls.Add(tile8)
+        Controls.Add(tile7)
+        Controls.Add(tile6)
+        Controls.Add(tile5)
+        Controls.Add(tile4)
+        Controls.Add(tile3)
+        Controls.Add(tile2)
+        Controls.Add(tile1)
         DoubleBuffered = True
         Name = "Glass"
         Text = "Glass"
@@ -149,4 +164,13 @@ Partial Class Glass
     Friend WithEvents tileSix As Button
     Friend WithEvents tileSeven As Button
     Friend WithEvents tileEight As Button
+    Friend WithEvents tile1 As Button
+    Friend WithEvents tile2 As Button
+    Friend WithEvents tile3 As Button
+    Friend WithEvents tile4 As Button
+    Friend WithEvents tile5 As Button
+    Friend WithEvents tile6 As Button
+    Friend WithEvents tile7 As Button
+    Friend WithEvents tile8 As Button
+    Friend WithEvents backToLogin As Button
 End Class
