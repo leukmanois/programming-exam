@@ -26,22 +26,28 @@ Public Class Glass
 
     Private Sub CheckGameOver()
         ' For the message boxes if you reached tile8 or just died lmao 🔥🔥
-        If playerPosition = 8 Then
-            MessageBox.Show("Congratulations! You reached the end platform.")
-            ResetGame()
+        If playerPosition = 14 Then
+            gameIndicator.ForeColor = Color.YellowGreen
+            gameIndicator.Text = "You won!"
         ElseIf random.Next(2) = 0 Then ' The 50% chance of dying
-            MessageBox.Show("Oops! You stepped on a fragile glass panel. Game over.")
-            ResetGame()
+            Me.Controls("tile" & playerPosition).Text = "💀"
+            For i As Integer = 1 To 14
+                Me.Controls("tile" & i).Enabled = False
+            Next
+            gameIndicator.ForeColor = Color.IndianRed
+            gameIndicator.Text = "You died!"
         End If
     End Sub
 
     Private Sub ResetGame()
         gameOver = False
 
-        ' Clear player emoji
-        For i As Integer = 1 To 8
+        ' Clear player emoji and reset font colors
+        For i As Integer = 1 To 14
             Me.Controls("tile" & i).Text = ""
         Next
+
+        gameIndicator.Text = ""
 
         ' Reset playerPosition then put player emoji on playerPosition, also updates disabled buttons yeah
         playerPosition = 1
@@ -50,29 +56,29 @@ Public Class Glass
     End Sub
 
     Private Sub DisableUpdate()
+        For i As Integer = 1 To 14
+            Me.Controls("tile" & i).Enabled = False
+        Next
         If playerPosition = 1 Then
-            For i As Integer = 1 To 8
-                Me.Controls("tile" & i).Enabled = False
-            Next
             tile2.Enabled = True
             tile3.Enabled = True
         ElseIf playerPosition = 2 Or playerPosition = 3 Then
-            For i As Integer = 1 To 8
-                Me.Controls("tile" & i).Enabled = False
-            Next
             tile4.Enabled = True
             tile5.Enabled = True
         ElseIf playerPosition = 4 Or playerPosition = 5 Then
-            For i As Integer = 1 To 8
-                Me.Controls("tile" & i).Enabled = False
-            Next
             tile6.Enabled = True
             tile7.Enabled = True
         ElseIf playerPosition = 6 Or playerPosition = 7 Then
-            For i As Integer = 1 To 8
-                Me.Controls("tile" & i).Enabled = False
-            Next
             tile8.Enabled = True
+            tile9.Enabled = True
+        ElseIf playerPosition = 8 Or playerPosition = 9 Then
+            tile10.Enabled = True
+            tile11.Enabled = True
+        ElseIf playerPosition = 10 Or playerPosition = 11 Then
+            tile12.Enabled = True
+            tile13.Enabled = True
+        ElseIf playerPosition = 12 Or playerPosition = 13 Then
+            tile14.Enabled = True
         End If
     End Sub
 
@@ -125,9 +131,54 @@ Public Class Glass
         End If
     End Sub
 
+    Private Sub tile9_Click(sender As Object, e As EventArgs) Handles tile9.Click
+        If Not gameOver Then
+            MovePlayer(9)
+            CheckGameOver()
+        End If
+    End Sub
+
+    Private Sub tile10_Click(sender As Object, e As EventArgs) Handles tile10.Click
+        If Not gameOver Then
+            MovePlayer(10)
+            CheckGameOver()
+        End If
+    End Sub
+
+    Private Sub tile11_Click(sender As Object, e As EventArgs) Handles tile11.Click
+        If Not gameOver Then
+            MovePlayer(11)
+            CheckGameOver()
+        End If
+    End Sub
+
+    Private Sub tile12_Click(sender As Object, e As EventArgs) Handles tile12.Click
+        If Not gameOver Then
+            MovePlayer(12)
+            CheckGameOver()
+        End If
+    End Sub
+
+    Private Sub tile13_Click(sender As Object, e As EventArgs) Handles tile13.Click
+        If Not gameOver Then
+            MovePlayer(13)
+            CheckGameOver()
+        End If
+    End Sub
+
+    Private Sub tile14_Click(sender As Object, e As EventArgs) Handles tile14.Click
+        If Not gameOver Then
+            MovePlayer(14)
+            CheckGameOver()
+        End If
+    End Sub
     Private Sub backToLogin_Click(sender As Object, e As EventArgs) Handles backToLogin.Click
         ResetGame()
         Me.Hide()
         Menu.Show()
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        ResetGame()
     End Sub
 End Class
